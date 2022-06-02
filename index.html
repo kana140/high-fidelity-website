@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Carbon Tiptoe!</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Work Sans' rel='stylesheet'>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hahmlet:wght@700&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/ef980cee3d.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="index.css">
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div class="custom-background-color topnav">
+    <a class="active" href="#home"><i class="fa-solid fa-house-chimney"></i> Home</a> 
+    <a href="#about">About us</a>
+    <a href="#help">Get Involved</a>
+    <a href="#contact">Contact us</a> 
+
+    <div class="float-right">
+        <a href="#" id="trigger-modal">Register <i class="fa-solid fa-clipboard-user"></i> </a>
+        <!-- The Trigger Modal -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                    <h3>Register with us</h3>
+                </div>
+                <div id="ct-form">
+                    <hr class="custom-color" style="border-top:1px dashed">
+                    <form> 
+                        <div id="userDetails">
+                            <h4>User Details</h4>
+                            <div class="form-group">
+                                <label for="fname">First Name</label>
+                                <input type="text" id="fname" name="fname" placeholder="John">
+                            </div>
+                            <div class="form-group">
+                                <label for="lname"> Last Name</label>
+                                <input type="text" id="lname" name="lname" placeholder="Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="username">User Name</label>
+                                <input type="text" id="username" name="username" placeholder="jdoe123">
+                            </div>
+                            <div class="form-group">
+                                <label for="pword"> Password</label>
+                                <input type="password" id="pword" name="pword" placeholder="Enter password">
+                                <br><br>
+                            </div>
+                        </div>
+                        <hr class="custom-color" style="border-top:1px dashed">
+                        <h4>Addresses</h4>
+                        <div id="addresses">
+                            <div class="form-group">
+                                <label for="haddress">Home Address</label>
+                                <input type="text" id="haddress" name="haddress" placeholder="123 Symonds street...">
+                            </div>
+                            <div class="form-group">
+                                <label for="waddress"> Work Address</label>
+                                <input type="text" id="waddress" name="waddress" placeholder="123 Business street..."><br><br>
+                            </div>
+                        </div>
+                        <hr class="custom-color" style="border-top:1px dashed">
+                        <h4>Contact</h4>
+                        <div id="contacts">
+                            <div class="form-group">
+                                <label for="number">Mobile Number</label>
+                                <input type="text" id="number" name="number" placeholder="+64 12 3456 7890">
+                            </div>
+                            <div class="form-group">
+                                <label for="email"> Email </label>
+                                <input type="text" id="email" name="email" placeholder="jdoe123@email.com"><br><br>
+                            </div>
+                        </div>
+                        <input type="submit" id="submit" class="custom-background-color text-color" name="submit">
+                    </form>
+                </div>
+            </div>
+</div>
+        <a href="javascript:void(0)" class="w3-padding-large w3-hover-grey w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+
+<!-- Page content -->
+    <div class="w3-content" style="max-width:1920px;margin-top:46px">
+
+
+    <!-- Homepage -->
+        <!-- Automatic Slideshow Images -->
+    <div class="home" id="home">
+        <div class="mySlides">
+            <img src="tree.jpg" alt="Picture of tree with the sky in the background">
+            <div class = "w3-wide logo1">Carbon</div>
+            <div class = "w3-wide logo2">Tiptoe!</div>
+        </div>
+        <div class="mySlides">
+            <img src="person-on-hill.jpg" alt="Picture of person on a rock overlooking a forest">
+            <div class = "w3-wide logo1">Carbon</div>
+            <div class = "w3-wide logo2">Tiptoe!</div>
+        </div>
+        <div class="mySlides">
+            <img src="blue-water.jpg" alt="Picture of a crystal clear blue lake and a forest">
+            <div class = "w3-wide logo1">Carbon</div>
+            <div class = "w3-wide logo2">Tiptoe!</div>
+        </div>
+    </div> 
+  
+    <!-- About us -->
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="about">
+      <h2 class="w3-wide custom-color">CARBON TIPTOE</h2>
+      <p class="w3-opacity" style="font-size:16px"><i>We love the earth</i></p>
+      <p>Our happily married founders met...... and had their son Jaspher 10 years later. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+        ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <hr class="custom-color" style="border-top:1px solid;padding-top:20px">
+        <div class="w3-row w3-padding-24">
+            <h3 class="w3-wide custom-color">Our Founders</h2>
+            <div class="founder-box">
+                <div class="founder">
+                    <img src="man.jpg" class="w3-round w3-margin-bottom" alt="Picture of founder Sam Sajch">
+                    <p>Sam Sajch</p>
+                </div>
+                <div class="founder">
+                    <img src="woman.jpg" class="w3-round w3-margin-bottom" alt="Picture of founder Kenji Wenji-Sajch">
+                    <p>Kenji Wenji-Sajch</p>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+    <!-- How To Help Section -->
+    <div class="custom-background-color" id="help">
+      <div class="w3-container w3-content w3-padding-64" style="max-width:900px">
+        <h2 class="w3-wide w3-center text-color">GET INVOLVED</h2>
+        <div id="help-section">
+            <img src="people-planting.jpg" style="width:28%;border-radius:10px" alt="Five people planting a tree together">
+            <p class="text-color" style="font-size:16px">
+                <i>Register with us and Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore </i>
+            </p>
+        </div>
+      </div>
+    </div>
+  
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <h2 class="w3-wide w3-center custom-color">CONTACT</h2>
+      <p class="w3-opacity w3-center"><i>Reach out to us with any questions</i></p>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom custom-color">
+          <i class="fa fa-map-marker" style="width:30px"></i> Auckland, NZ<br>
+          <i class="fa fa-phone" style="width:30px"></i> Phone: +64 12 3456 7890<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: mail@mail.com<br>
+        </div>
+        <div class="w3-col m6">
+          <form action="/action_page.php" target="_blank">
+            <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+              </div>
+              <div class="w3-half">
+                <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+              </div>
+            </div>
+            <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+            <button class="w3-section w3-right custom-background-color text-color" id="submit" type="submit">SEND</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+  <!-- End Page Content -->
+  </div>
+  
+  
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity footer-color w3-xlarge custom-color">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
+  
+  <script src="script.js"></script>
+  
+  </body>
+  </html>
+  
+  <!-- images from https://stocksnap.io/-->
+  <!-- template used from w3-->
